@@ -1,0 +1,191 @@
+# Impresion de Variables
+
+variable = "Pelota"
+
+print(variable)
+print(f"Hola esto es una {variable}")
+print("Hola esto es una",variable)
+print("Hola esto es una {}".format(variable)
+
+# Tipos de Variables
+
+int (tipo entero)
+str (string / cadena)
+float (numero flotante)
+bool (Valores boleanos True o False)
+
+------ Ejemplo -------
+
+variable1 = "Hola Mundo" # Tipo entero, no hace falta declarar la variable tipo (str)
+variable1 = str("Hola Mundo")
+variable2 = int(5)
+variable3 = float(5.3)
+variable4 = True
+
+print(type(variable2)) # Muestra el tipo de variable
+
+
+# Operaciones Aritmeticas
+
+Prioridad de los Operadores Aritmeticos:
+1) Parentesis ()
+2) Exponenciacion **
+3) Multiplicacion, Division y Modulo *,/,%
+4) Suma y Resta +,-
+
+
+------ Ejemplo 1 -------
+
+valor1 = 5
+valor2 = 2
+
+calculo = valor1 / valor2 # Division con decimales
+calculo = valor1 // valor2 # Division entera redondeada
+calculo = valor1 % valor2 # Operador Modulo (Obtiene el resto de una division)
+calculo = valor1 ** valor2 # Elevador de exponenciacion 2 a quinta (5) = 2^5 
+
+print(f'El resultado es {caculo}')
+
+----- EJemplo de Exponenciacion -----
+
+valor1 = 5
+valor2 = 2
+valor3 = 2
+
+calculo = valor1**valor2 * valor3 # 5^2 * 2 = 50
+
+print(f'EL resultado es {calculo}')
+
+----- EJemplo 2 -----
+
+calculo = 3**valor2 * (valor1/5 - (valor3*4)) # La formula es 3^2*(2/5 - (2*4))
+
+print(f'EL resultado es {calculo}') 
+
+# Operaciones Relacionales
+
+* Se utilizan para establecer una relacion entre dos valores
+* Compara estos valores entre si y genera un resultado verdadero o falso
+* Tienen la misma prioridad en su evaluacion
+* Los operadores relacionales tienen menor prioridad que los aritmeticos
+
+Operadores:
+
+> Mayor que
+< Menor que
+> = Mayor o igual que
+< = Menor o igual que
+! =  Diferente
+= = Igual
+
+---- Ejemplo ----
+
+valor1 = int(10)
+valor2 = int(15)
+
+calculo = valor1 > 15
+
+print (f'El resultado es {calculo}') # Resultado: False
+
+---- Ejemplo 2 ----
+
+a = 10
+b = 20
+c = 30
+
+calculo = a+b > c
+
+print(f'El resultado es {calculo}') # Resultado: False
+
+# Operaciones Logicas
+
+* Permite construir expresiones logicas, se obtiene como resultado booleanos.
+
+Operadores:
+
+and Conjucion
+or Disyuncion
+not Negacion
+
+* Operador AND (Multiplicacion Logica):
+
+[Variable1] [Operador] [Variable2] [Resultado]
+   True        and       True        True
+   True        and       False       False
+   False       and       True        False
+   False       and       False       False
+
+* Operador OR (Suma Logica):
+
+[Variable1] [Operador] [Variable2] [Resultado]
+   True        or        True        True
+   True        or        False       True
+   False       or        True        True
+   False       or        False       False
+
+* Operador NOT (Operacion de Negacion)
+[Variable]  [Resultado]
+ not(True)     False
+ not(False)    True
+
+Prioridad  (de los Operadores Logicos:
+1) NOT
+2) AND
+3) OR
+
+---- Ejemplo ----
+
+a = 10
+b = 12
+c = 13
+d = 10
+
+calculo = ((a>b) or (a<c)) and ((a==c) or (a>=b))
+
+print(f'El resultado es {calculo}') # Reslultado: False
+
+
+---- Ejemplo 2 ----
+a = 10
+b = 20
+c = 30
+
+calculo = ((a<b) or (c<a))
+
+print (f'El resultado es {calculo}') # El resultado es True
+
+# Operadores de Aginaciones
+
+* Se le asigna nuevos valores a una misma variable<F4><F4>
+
+a = 0
+
+a += 5 # Suma en Aginacion (a pasa a tener  un valor de 5)
+a -= 2 # Resta en Asignacion (a pasa a tener un valor de 3)
+a *= 3 # Multiplicacion en Asignacion (a vale ahora 9)
+a /= 3 # Division en Asignacion (a ahora tiene un valor de 3)
+a **= 2 # Potencia en Asignacion (a tiene un valor de 9)
+
+print(a)
+
+# Intercambio de Valores
+
+a = 1
+b = 2
+
+a , b = b , a # El valor ahora es a=2 y b=1
+
+# Funciones Integrada
+
+var = bin(10) # Convierte un valor a binario
+var = hex(10) # Convierte un valor a Hexadecimal
+var = len(10) # Cuenta la longitud de caracteres
+var = round(5.6) # Redondea un valor
+var = round(5.6554, 2) # Redondea a 2 decimales 5.65
+var = abs(-8) # Obtiene el valor absoluto de un numero
+
+valor = 55.2222
+print(f"El valor es {valor:.2f}") #Muestra 2 decimales, el valor es de 55.22
+
+# Condicionales
+
