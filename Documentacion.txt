@@ -183,9 +183,22 @@ var = len(10) # Cuenta la longitud de caracteres
 var = round(5.6) # Redondea un valor
 var = round(5.6554, 2) # Redondea a 2 decimales 5.65
 var = abs(-8) # Obtiene el valor absoluto de un numero
+.lower()      # Colocar minusculas
+.upper()      # Colocar mayusculas
+.strip()      # Omitir caracteres
 
 valor = 55.2222
 print(f"El valor es {valor:.2f}") #Muestra 2 decimales, el valor es de 55.22
 
 # Condicionales
 
+if a>b or c==b:
+   print("Hola")
+elif b!=c:
+   print("hola")
+   if simulando multicondicinal:
+      la simulo
+   else:
+      no se simula
+else:
+   adios
