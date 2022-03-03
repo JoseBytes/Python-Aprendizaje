@@ -1,3 +1,5 @@
+# Practicando las variables por asignacion
+
 zapato = float(25)
 camisa = float(15)
 pantalon = float(5)
@@ -24,5 +26,5 @@ total = subtotal-descuentoC
 
 print("\n")
 print(f'El subtotal es de: {subtotal}$')
-print(f'El descuento es de: {descuentoC:.2f}$ (15%)')
+print(f'El descuento es de: {descuentoC:.2f}$ (15%)') # :.2f redondea a dos decimales desde el print
 print(f'Total a Pagar: {total}$')

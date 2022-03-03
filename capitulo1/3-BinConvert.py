@@ -1,3 +1,5 @@
+# Convertidor Bin
+
 print("Convierta Decimal a Binario")
 
 binario = int(input("Ingrese un valor: "))

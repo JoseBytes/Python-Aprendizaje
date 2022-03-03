@@ -1,4 +1,5 @@
-# Simulacion de Cajero Automatico con un saldo a favor de 1000$
+# Simulacion de Cajero Automatico con un saldo a favor de 1000$ - Ejercicio Basico y Simple
+# Simulando Condiciones Multiples
 
 # Menu
 print("Cajero Aumatico")
@@ -7,7 +8,7 @@ print("1 - Para ingresar dinero")
 print("2 - Para retirar dinero")
 print("3 - Mostrar saldo")
 print("4 - Salir")
-print("\n")
+print()
 
 # Entrada
 opcion = int(input("Ingrese una opcion: "))
@@ -32,6 +33,3 @@ elif opcion==4:
     exit()
 else:
     print("Error: Las opcion no es valida.")
-
-
-

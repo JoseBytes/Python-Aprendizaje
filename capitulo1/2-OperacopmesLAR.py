@@ -1,3 +1,5 @@
+# Ejerciciones de Operaciones Logicas, Aritmeticas y Relacionales
+
 a = float(input("A) Ingresa una variable: "))
 b = float(input("B) Ingresa una variable: "))
 c = float(input("C) Ingresa una variable: "))

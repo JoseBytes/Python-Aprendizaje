@@ -1,4 +1,5 @@
 # Calculadora Aritmetica Basica
+# Simulando condiciones multiples
 
 print("Presione (+) para sumar")
 print("Presione (-) para restar")

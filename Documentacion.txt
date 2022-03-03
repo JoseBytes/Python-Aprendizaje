@@ -202,3 +202,9 @@ elif b!=c:
       no se simula
 else:
    adios
+
+# Listas
+
+# Tuples
+
+# Conjuntos

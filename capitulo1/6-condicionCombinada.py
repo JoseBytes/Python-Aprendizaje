@@ -3,7 +3,7 @@
 edad = int(input("Introduce tu Edad: "))
 msg = ""
 #if edad>0 and edad<100:
-if 0<edad<100:
+if 0<edad<100:  # Condicion combinada y simplificada
     status = "Edad correcta"
     if edad>=18:
         msg = "Mayor de edad"
@@ -14,4 +14,3 @@ else:
 
 print(msg)
 print(status)
-

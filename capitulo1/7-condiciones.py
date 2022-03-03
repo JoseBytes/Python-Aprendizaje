@@ -1,4 +1,4 @@
-# Cual numero es el mayor
+# Cual es el numero mayor
 
 a = int(input("Ingrese un valor A: "))
 b = int(input("Ingrese un valor B: "))

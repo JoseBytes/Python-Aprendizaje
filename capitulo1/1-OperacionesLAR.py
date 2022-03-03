@@ -11,4 +11,3 @@ negacion = not(calculo) # Niega a False y genera True
 
 print(f'El resultado es {negacion}') # El resultado es True
 print(f'Esto es una impresion de texto')
-
