@@ -192,6 +192,8 @@ print(f"El valor es {valor:.2f}") #Muestra 2 decimales, el valor es de 55.22
 
 # Condicionales
 
+Dependiendo de la condicion si el valor es True o False se genera una instruccion.
+
 if a>b or c==b:
    print("Hola")
 elif b!=c:
@@ -203,8 +205,10 @@ elif b!=c:
 else:
    adios
 
-# Listas
+# Colecciones: Listas []
 
-# Tuples
+# Colecciones: Tuples ()
 
-# Conjuntos
+# Colecciones: Conjuntos {}
+
+# Colecciones: Diccionarios {}
