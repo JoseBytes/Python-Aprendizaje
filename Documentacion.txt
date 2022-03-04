@@ -165,6 +165,7 @@ a -= 2 # Resta en Asignacion (a pasa a tener un valor de 3)
 a *= 3 # Multiplicacion en Asignacion (a vale ahora 9)
 a /= 3 # Division en Asignacion (a ahora tiene un valor de 3)
 a **= 2 # Potencia en Asignacion (a tiene un valor de 9)
+a %= 2 # Modulo por asignacion
 
 print(a)
 
@@ -206,6 +207,8 @@ else:
    adios
 
 # Colecciones: Listas []
+
+
 
 # Colecciones: Tuples ()
 
