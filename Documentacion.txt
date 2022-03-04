@@ -208,6 +208,51 @@ else:
 
 # Colecciones: Listas []
 
+Pueden almacenar valores de tipo Cadena, Enteros, Flotantes, Sublistas, Booleanos.
+La numeracion o posicion de las listas o colecciones comienzan desde el 0 hasta el -1
+
+----Ejemplo----
+
+lista = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+
+print(lista[1]) #Imprime Lunes
+print(lista[-1]) #Imprime Viernes
+print(lista[0:3]) #Imprime desde el indice 0 a 3 Lunes, Martes, Miercoles
+print(lista[2:]) #Imprime desde el indice inicial hasta el final de la lista
+
+----Ejemplo 2----
+
+Lista con diferentes valores y sublistas
+
+lista = [40, 50, True, False, 5.4, ["Hola Mundo", 1, 2, 3], Cadena]
+
+print(len(lista)) # Muestra en un numero entero la cantidad de elementos (7)
+print(len(lista[5])) # Muestra la cantidad de Item en la Sublistas
+
+----Ejemplo 3 Modificar Listas----
+
+En la lista se pueden agregar nuevos elementos
+
+lista = [1,2,3,4,5]
+lista.append(6)    # La funcion append.() agrega elementos al final de la lista
+lista.insert(0,7)  # Inserta elementos en una posicion especifica (index,item)
+lista.extend([7,8,9]) # Concatena varios elementos en una lista
+
+Se pueden unir dos listas de forma aritmetica:
+lista2 = [10, 11, 12, 13]
+lista3 = lista + lista2
+
+-------- Busqueda de Elementos ------
+Busquedas de Elementos en una lista:
+
+lista = [1, 2, 3, 4, 5]
+
+print(5 in lista)     # Busca si 5 esta en la lista (True)
+print(lista.index(2)) # Muestra la posicion del Elemento
+print(lista.count(4)) # Muestra cuantas veces se repite un elemento
+
+------- Eliminar Elementos --------
+
 
 
 # Colecciones: Tuples ()
