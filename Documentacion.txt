@@ -211,7 +211,7 @@ else:
 Pueden almacenar valores de tipo Cadena, Enteros, Flotantes, Sublistas, Booleanos.
 La numeracion o posicion de las listas o colecciones comienzan desde el 0 hasta el -1
 
-----Ejemplo----
+------ Ejemplo 1 ------
 
 lista = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
 
@@ -220,7 +220,7 @@ print(lista[-1]) #Imprime Viernes
 print(lista[0:3]) #Imprime desde el indice 0 a 3 Lunes, Martes, Miercoles
 print(lista[2:]) #Imprime desde el indice inicial hasta el final de la lista
 
-----Ejemplo 2----
+------ Ejemplo 2 ------
 
 Lista con diferentes valores y sublistas
 
@@ -229,34 +229,115 @@ lista = [40, 50, True, False, 5.4, ["Hola Mundo", 1, 2, 3], Cadena]
 print(len(lista)) # Muestra en un numero entero la cantidad de elementos (7)
 print(len(lista[5])) # Muestra la cantidad de Item en la Sublistas
 
-----Ejemplo 3 Modificar Listas----
-
-En la lista se pueden agregar nuevos elementos
+------ Agregar/Modificar ------
+Las Listas pueden ser modificadas agregando nuevos elementos, modificando los elementos o extender la lista.
 
 lista = [1,2,3,4,5]
 lista.append(6)    # La funcion append.() agrega elementos al final de la lista
 lista.insert(0,7)  # Inserta elementos en una posicion especifica (index,item)
 lista.extend([7,8,9]) # Concatena varios elementos en una lista
 
-Se pueden unir dos listas de forma aritmetica:
 lista2 = [10, 11, 12, 13]
-lista3 = lista + lista2
+lista3 = lista + lista2 # Suma dos listas de forma aritmetica o se pueden multiplicar
+lista[3] = 6            # Modifica el elemento de una lista
 
--------- Busqueda de Elementos ------
+------ Busqueda ------
 Busquedas de Elementos en una lista:
 
 lista = [1, 2, 3, 4, 5]
 
+print(80 not in lista) # Busca si no esta el valor de 80 en la lista
 print(5 in lista)     # Busca si 5 esta en la lista (True)
 print(lista.index(2)) # Muestra la posicion del Elemento
 print(lista.count(4)) # Muestra cuantas veces se repite un elemento
 
-------- Eliminar Elementos --------
+------ Eliminar ------
+Eliminar elementos o vaciar lista:
 
+lista = [1, 2, 3, 4, 5, "Jose", "Viviana"]
+lista.pop()    # Elimina el ultimo elemento por defecto
+lista.pop(4)   # Elimina el elemento de una posicion especificada
+lista.remove("Jose") # Elimina un elemento en especifico
+lista.clear()  # Elimina todos los elementos de una lista
 
+------ Ordenar ------
+
+lista.reverse() # Invierte el orden de una lista
+lista.sort()    # Ordena los ementos de forma ascendente
+lista.sort(reverse=True) # Ordena los elementos de mayor a menor
 
 # Colecciones: Tuples ()
 
+Las Tuplas son Listas inmutables (no modificables)
+Las Tuplas se pueden transformar en Listas y viceversa
+
+tupla = (1, 2, 3, 4, 5)
+lista = list(tupla)     # La tupla pasaria a ser una lista
+
 # Colecciones: Conjuntos {}
 
+Los conjuntos son un grupo elementos quese agregan de forma desordenada.
+No pueden haber elementos duplicados.
+No pueden haber colecciones dentro de un conjunto
+
+conjunto = set() # La funcion set() indica que se creara un conjunto vacio
+
+conjunto = {1, 2, 3, 4, 5}
+
+------ Agregar/Modificar ------
+conjunto.add(6) #Se utiliza para agregar un elemento en la coleccion
+conjunto.discard(4) # Elimina un elemento del conjunto en especifico
+conjunto.clear()    # Vacia el conjunto
+
+------ Operaciones: Union/Interseccion/Diferencial ------
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+c = a | b   # Union: Une solo los elementos que hay en ambos conjuntos
+c = a & b   # Interseccion: Agrega los elementos que se repite en A y B
+c = a - b   # Diferencia: Agrega los elementos que estan en A y no en B
+c = a ^ b   # Diferencia Simetrica: Agrega los elementos que no estan en A y B
+
+------ Subconjuntos/Superconjuntos
+a = {1, 2, 3}
+b = {3, 4, 5}
+c = {1, 2, 3, 4, 5}
+
+print(a.inssubset(c)) # Determina si A es un subconjunto de C
+print(c.issuperset(a)) # Determina si C es un superconjunto de A
+print(a.isdisjoint(b)) # Determina si A no comparte elementos en comun con B
+
+------ Inmutable
+Convierte un conjunto en una coleccion no modificable
+
+conjunto = frozenset({1, 2, 3, 4, 5})
+
 # Colecciones: Diccionarios {}
+
+La principal caracteristica de un Diccionario es que tienen CLAVE:VALOR
+No pueden haber duplicados al igual que en los Conjuntos.
+Los diccionarios vacios se pueden colocar directos sin set().
+
+diccionario = {"azul":"blue", "rojo":"red", "verde":"green"}
+
+print(diccionario["azul"]) # Imprime el valor del elemento "Blue"
+
+------ Agregar/Modificar
+diccionario["amarillo"] = "yelow" # Agrega un nuevo elemento con valor
+diccionario["azul"] = "BLUE" # Modifica el valor del blue a BLUE
+
+del(diccionario["azul"]) # Elimina el elemento del diccionario
+
+------ Formas de Estructura
+
+diccionario = {"Jose":[28, 1.82], "Liza":{"Edad":22, "Estatura":1.79}}
+print(diccionario["Jose"])
+
+------ Ejemplo:
+
+
+
+
+
+
+
