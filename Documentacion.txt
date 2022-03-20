@@ -326,7 +326,7 @@ print(diccionario["azul"]) # Imprime el valor del elemento "Blue"
 diccionario["amarillo"] = "yelow" # Agrega un nuevo elemento con valor
 diccionario["azul"] = "BLUE" # Modifica el valor del blue a BLUE
 
-del(diccionario["azul"]) # Elimina el elemento del diccionario
+del(lista["rojo"]) # Elimina un conjunto de elementos del diccionario desde la clave
 
 ------ Formas de Estructura
 
@@ -374,7 +374,3 @@ atendido = cola.pop(0)  # Primero en salir el index 0 (Viviana)
 print(cola)
 
 # BUCLES: While
-
-
-
-
