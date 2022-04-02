@@ -73,10 +73,10 @@ Operadores:
 
 > Mayor que
 < Menor que
-> = Mayor o igual que
-< = Menor o igual que
-! =  Diferente
-= = Igual
+>= Mayor o igual que
+<= Menor o igual que
+!=  Diferente
+== Igual
 
 ---- Ejemplo ----
 
@@ -288,6 +288,7 @@ conjunto = {1, 2, 3, 4, 5}
 conjunto.add(6) #Se utiliza para agregar un elemento en la coleccion
 conjunto.discard(4) # Elimina un elemento del conjunto en especifico
 conjunto.clear()    # Vacia el conjunto
+conjunto.pop()      # Elimina de izquierda a derecha
 
 ------ Operaciones: Union/Interseccion/Diferencial ------
 a = {1, 2, 3}
